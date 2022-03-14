@@ -21,8 +21,11 @@ namespace problem1
             length = l;
             width = w;
         }
+
+        //没有写属性，属性要写public，字段是私有的，因为属性是提供给别人访问的，字段不是
         
         //方法
+        //--------把面积变成属性更好-----------
         public override double getArea()
         {
             if (ifReasonable())
@@ -37,6 +40,7 @@ namespace problem1
     }
 
     //正方形
+    //---------------继承shape更好-------------------
     class Squre : Rectangle
     {
         //构造函数
