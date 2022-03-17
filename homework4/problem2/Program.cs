@@ -20,7 +20,7 @@ namespace problem2
             //是否设置了闹钟
             public bool ifSet = false;
             //开启按钮
-            bool ifWork = false;
+            public bool ifWork = false;
 
             //响铃时间
             public ClockArgs ringTime { get; set; }
@@ -94,14 +94,14 @@ namespace problem2
             //滴答函数
             public void TickEventHandler(Object sender, ClockArgs args)
             {
-                Console.Write("the clock is ticking,the time now is:" + args.hour + ":" + args.minute + ":" + args.second+"\n");
+                Console.Write("闹钟正在滴答，此时的时间是:" + args.hour + ":" + args.minute + ":" + args.second+"\n");
             }
 
             //响铃函数
             public void AlarmEventHandler(Object sender, ClockArgs args)
             {
                 if (myClock.ifSet&&DateTime.Now.Hour == myClock.ringTime.hour && DateTime.Now.Minute == myClock.ringTime.minute && DateTime.Now.Second == myClock.ringTime.second)
-                    Console.Write(args.msg + "the time now is " + args.hour + ":" + args.minute + ":" + args.second);
+                    Console.Write(args.msg + "现在的时间为" + args.hour + ":" + args.minute + ":" + args.second);
             }
         }
 
@@ -112,18 +112,28 @@ namespace problem2
             
             //定闹钟
             clock.myClock.setRingTime(7, 30, 0, "大懒狗起床了");
-            
             Console.WriteLine("请键入start以模拟开启闹钟，键入stop以模拟关闭闹钟");
             
             while (true)
             {
-                if(Console.ReadLine()=="start")//开启闹钟
+                String info = Console.ReadLine();
+                if (info=="start")//开启闹钟
                 {
+                    if (clock.myClock.ifWork)
+                    {
+                        Console.WriteLine("闹钟已开启");
+                        continue;
+                    }
                     Thread threadStart = new Thread(new ThreadStart(clock.myClock.start));
                     threadStart.Start();
                 }
-                if(Console.ReadLine()=="stop")//停止闹钟
+                else if(info=="stop")//停止闹钟
                 {
+                    if(!clock.myClock.ifWork)
+                    {
+                        Console.WriteLine("闹钟已关闭");
+                        continue;
+                    }
                     Thread threadStop = new Thread(new ThreadStart(clock.myClock.stop));
                     threadStop.Start();
                 }
