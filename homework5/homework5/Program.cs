@@ -108,14 +108,14 @@ namespace homework5
 
     class OrderService
     {
-        //<summery>
-        //订单列表
-        //</summery>
+        ///<summary>
+        ///订单列表
+        ///</summary>
         public static List<Order> list = new List<Order>();
         
-        //<summery>
-        //增加订单
-        //</summery>
+        ///<summary>
+        ///增加订单
+        ///</summary>
         public static void Add(List<OrderDetail> list,String customer)
         {
             StringBuilder buffer = new StringBuilder();
@@ -129,9 +129,9 @@ namespace homework5
                 throw new ArgumentException("订单已存在，不能重复添加");
         }
 
-        //<summery>
-        //删除订单
-        //</summery>
+        ///<summary>
+        ///删除订单
+        ///</summary>
         public static void Delete(infoStruct info)
         {
             List<Order> toDelete= Query(info).ToList();
@@ -142,9 +142,9 @@ namespace homework5
                 throw new ArgumentException("无此订单，无法删除");
         }
 
-        //<summery>
-        //修改订单
-        //</summery>
+        ///<summary>
+        ///修改订单
+        ///</summary>
         public static void Change(infoStruct toBeChanged,infoStruct changeTo)
         {
             List<Order> toChange = Query(toBeChanged).ToList();
@@ -154,9 +154,9 @@ namespace homework5
             } 
             List<int> changeIndex = new List<int>();
             
-            //<summery>
-            //找到数组下标
-            //</summery>
+            ///<summary>
+            ///找到数组下标
+            ///</summary>
             foreach (Order current in toChange)
             {
                 int tmpIndex = OrderService.list.FindIndex(item => item.Equals(current));
@@ -186,9 +186,9 @@ namespace homework5
             }
         }
 
-        //<summery>
-        //查询订单
-        //</summery>
+        ///<summary>
+        ///查询订单
+        ///</summary>
         public static IEnumerable<Order> Query(infoStruct info)
         {
             if (info.ID != null)
@@ -222,9 +222,9 @@ namespace homework5
         public String customer { get; set; }
         public int sum { get; set; }
 
-        //<summery>
-        //生成查询语句
-        //</summery>
+        ///<summary>
+        ///生成查询语句
+        ///</summary>
         public infoStruct(String ID=null,String name=null,int unitValue =-1,int number=-1, String customer=null,int sum=-1)
         {
             this.ID = ID;
