@@ -1,0 +1,16 @@
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\bin\Debug\net5.0\homework4.exe
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\bin\Debug\net5.0\homework4.deps.json
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\bin\Debug\net5.0\homework4.runtimeconfig.json
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\bin\Debug\net5.0\homework4.runtimeconfig.dev.json
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\bin\Debug\net5.0\homework4.dll
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\bin\Debug\net5.0\ref\homework4.dll
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\bin\Debug\net5.0\homework4.pdb
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\homework4.csproj.AssemblyReference.cache
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\homework4.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\homework4.AssemblyInfoInputs.cache
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\homework4.AssemblyInfo.cs
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\homework4.csproj.CoreCompileInputs.cache
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\homework4.dll
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\ref\homework4.dll
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\homework4.pdb
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework4\homework4\homework4\obj\Debug\net5.0\homework4.genruntimeconfig.cache

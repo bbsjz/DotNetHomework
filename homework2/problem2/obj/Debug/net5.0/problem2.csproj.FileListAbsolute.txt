@@ -1,0 +1,16 @@
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\problem2.csproj.AssemblyReference.cache
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\problem2.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\problem2.AssemblyInfoInputs.cache
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\problem2.AssemblyInfo.cs
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\problem2.csproj.CoreCompileInputs.cache
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\bin\Debug\net5.0\problem2.exe
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\bin\Debug\net5.0\problem2.deps.json
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\bin\Debug\net5.0\problem2.runtimeconfig.json
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\bin\Debug\net5.0\problem2.runtimeconfig.dev.json
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\bin\Debug\net5.0\problem2.dll
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\bin\Debug\net5.0\ref\problem2.dll
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\bin\Debug\net5.0\problem2.pdb
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\problem2.dll
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\ref\problem2.dll
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\problem2.pdb
+D:\workspace\c#\cSharpHomework\cSharpHomework\homework2\homework2\problem2\obj\Debug\net5.0\problem2.genruntimeconfig.cache

@@ -5,7 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-
+//导入的时候应该考虑重复数据，把失败的样本收集出来，并且返回原因（重复或者是别的什么原因）
+//testinitialize在每一个test之前，都会被调用一遍，就相当于会恢复到这个状态
+//File.ReadAllText读出文件的所有内容
+//导入文件不存在
+//导入文件格式不对
+//导入文件内容不对
 namespace homework5
 {
     [Serializable]
