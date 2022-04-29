@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,8 +20,6 @@ namespace SimpleCrawler {
         public event Action<string, bool> MsgChange;
         //用哈希表存储已经成功爬取过的网页
         private Hashtable crawled = new Hashtable();
-        //待爬队列
-        private Queue<string> toBeCrawled = new Queue<string>();
         //爬取的文件类型
         string fileType;
         //爬取的主机名
@@ -43,14 +42,8 @@ namespace SimpleCrawler {
             Match match = new Regex(part).Match(startUrl);
             host = match.Groups["host"].Value;
             crawled.Clear();
-            toBeCrawled.Clear();
-            toBeCrawled.Enqueue(startUrl);
             successBuilder.Append("开始爬行了.... \r\n");
-            while (crawled.Count + list.Count(t => t.Status == TaskStatus.Running) < max && toBeCrawled.Count > 0)
-            {
-                string current = toBeCrawled.Dequeue();
-                list.Add(Task.Run(() => DownLoad(current)));// 从根网站开始下载
-            }
+            list.Add(Task.Run(() => DownLoad(startUrl)));//从根目录触发爬取
         }
         public void DownLoad(string url) {
             if (!Directory.Exists("./crawl"))
@@ -75,7 +68,7 @@ namespace SimpleCrawler {
                     successBuilder.Append("爬行结束\r\n");
                     MsgChange(successBuilder.ToString(), true);
                 }
-                Parse(html,url);//解析,并加入新的链接
+                Parse(html,url);//解析,并开启新的下载任务
             }
             catch (Exception ex)
             {
@@ -102,16 +95,14 @@ namespace SimpleCrawler {
                 string targetHost = new Regex(part).Match(fullUrl).Groups["host"].Value;
                 string file = new Regex(part).Match(fullUrl).Groups["file"].Value;
                 if(Regex.IsMatch(host,targetHost)&&Regex.IsMatch(file,fileType)
-                    &&!crawled.ContainsKey(fullUrl)&&!toBeCrawled.Contains(fullUrl))
+                    &&!crawled.ContainsKey(fullUrl))
                 {
+                    //除去已完成的下载任务
                     list.RemoveAll(t => t.Status == TaskStatus.RanToCompletion);
+                    //已经爬完的数量加上正在爬取的数量小于需要的最大值，才添加新的任务
                     if (crawled.Count + list.Count < max)
                     {
                         list.Add(Task.Run(() => DownLoad(fullUrl)));
-                    }
-                    else
-                    {
-                        toBeCrawled.Enqueue(fullUrl);
                     }
                 }
             }
