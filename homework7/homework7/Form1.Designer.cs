@@ -69,7 +69,6 @@ namespace homework7
             this.panelTree.Name = "panelTree";
             this.panelTree.Size = new System.Drawing.Size(1781, 1484);
             this.panelTree.TabIndex = 0;
-            this.panelTree.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // buttonGroup
             // 
@@ -99,8 +98,6 @@ namespace homework7
             this.buttonGroup.Location = new System.Drawing.Point(0, 0);
             this.buttonGroup.Name = "buttonGroup";
             this.buttonGroup.Size = new System.Drawing.Size(676, 1484);
-            this.buttonGroup.TabIndex = 1;
-            this.buttonGroup.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint_1);
             // 
             // per1Label
             // 
@@ -112,7 +109,6 @@ namespace homework7
             this.per1Label.Size = new System.Drawing.Size(236, 46);
             this.per1Label.TabIndex = 22;
             this.per1Label.Text = "左分支长度比";
-            this.per1Label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // greenWarning
             // 
@@ -133,7 +129,6 @@ namespace homework7
             this.blueWarning.Size = new System.Drawing.Size(130, 46);
             this.blueWarning.TabIndex = 20;
             this.blueWarning.Text = "          ";
-            this.blueWarning.Click += new System.EventHandler(this.label11_Click);
             // 
             // redWarning
             // 
@@ -144,7 +139,6 @@ namespace homework7
             this.redWarning.Size = new System.Drawing.Size(108, 46);
             this.redWarning.TabIndex = 19;
             this.redWarning.Text = "        ";
-            this.redWarning.Click += new System.EventHandler(this.label10_Click);
             // 
             // greenBox
             // 
@@ -164,7 +158,6 @@ namespace homework7
             this.greenLabel.Size = new System.Drawing.Size(239, 46);
             this.greenLabel.TabIndex = 17;
             this.greenLabel.Text = "绘图颜色(G）";
-            this.greenLabel.Click += new System.EventHandler(this.label9_Click);
             // 
             // blueBox
             // 
@@ -184,7 +177,6 @@ namespace homework7
             this.blueLabel.Size = new System.Drawing.Size(235, 46);
             this.blueLabel.TabIndex = 15;
             this.blueLabel.Text = "绘图颜色(B）";
-            this.blueLabel.Click += new System.EventHandler(this.label8_Click);
             // 
             // draw
             // 
@@ -205,7 +197,6 @@ namespace homework7
             this.redLabel.Size = new System.Drawing.Size(236, 46);
             this.redLabel.TabIndex = 13;
             this.redLabel.Text = "绘图颜色(R）";
-            this.redLabel.Click += new System.EventHandler(this.label7_Click);
             // 
             // redBox
             // 
@@ -225,7 +216,6 @@ namespace homework7
             this.th2Label.Size = new System.Drawing.Size(200, 46);
             this.th2Label.TabIndex = 11;
             this.th2Label.Text = "左分支角度";
-            this.th2Label.Click += new System.EventHandler(this.label6_Click);
             // 
             // th1Bar
             // 
@@ -256,7 +246,6 @@ namespace homework7
             this.th1Label.Size = new System.Drawing.Size(200, 46);
             this.th1Label.TabIndex = 7;
             this.th1Label.Text = "右分支角度";
-            this.th1Label.Click += new System.EventHandler(this.label4_Click);
             // 
             // per2Label
             // 
@@ -268,7 +257,6 @@ namespace homework7
             this.per2Label.Size = new System.Drawing.Size(236, 46);
             this.per2Label.TabIndex = 6;
             this.per2Label.Text = "右分支长度比";
-            this.per2Label.Click += new System.EventHandler(this.label3_Click);
             // 
             // lengthLabel
             // 
@@ -279,7 +267,6 @@ namespace homework7
             this.lengthLabel.Size = new System.Drawing.Size(164, 46);
             this.lengthLabel.TabIndex = 5;
             this.lengthLabel.Text = "主干长度";
-            this.lengthLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // depthLabel
             // 
@@ -290,7 +277,6 @@ namespace homework7
             this.depthLabel.Size = new System.Drawing.Size(164, 46);
             this.depthLabel.TabIndex = 4;
             this.depthLabel.Text = "递归深度";
-            this.depthLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // th2Bar
             // 
